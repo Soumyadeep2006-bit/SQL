@@ -1,0 +1,13 @@
+USE startersql;
+-- SELECT * from users WHERE gender='Female';
+-- select * from users where gender<>'Male';
+-- select * from users where date_of_birth<'1999-05-06';
+-- select * from users where id<'9';
+-- select * from users;
+-- select * from users where date_of_birth between '1999-05-06' and '2010-05-11';
+-- select * from users where gender in ('Male','Female');
+-- select * from users where gender in ('Other');
+-- select * from users where gender ='Female' and salary>'72000';
+-- select * from users where gender in ('Male') and salary>65000  ORDER BY date_of_birth DESC;
+-- select * from users where gender in ('Male') and salary>65000  ORDER BY date_of_birth DESC LIMIT 2;
+ select * from users where gender in ("Female") or salary>65000 ORDER BY date_of_birth DESC ;
